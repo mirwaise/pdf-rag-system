@@ -58,6 +58,9 @@ Answer
 * Summarize my profile.
 
 ---
+## 📸 Demo
+
+![PDF RAG Demo](screenshot.png)
 
 ## 📸 Sample Output
 
