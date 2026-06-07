@@ -1,16 +1,21 @@
-# PDF RAG System
+# 📄 PDF RAG System
 
-A Retrieval-Augmented Generation (RAG) application built using Python, ChromaDB, Groq, and PyPDF.
+A Retrieval-Augmented Generation (RAG) application built using Python, ChromaDB, Groq, and PyPDF that can answer questions directly from PDF documents.
 
-## Features
+---
+
+## 🚀 Features
 
 * Extract text from PDF files
-* Clean and chunk document content
+* Clean and preprocess document content
+* Split documents into searchable chunks
 * Store chunks in ChromaDB
 * Retrieve relevant information using semantic search
-* Answer questions using Groq LLM
+* Generate answers using Groq + Llama 3
 
-## Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 * Python
 * PyPDF
@@ -18,26 +23,76 @@ A Retrieval-Augmented Generation (RAG) application built using Python, ChromaDB,
 * Groq API
 * Llama 3
 
-## How It Works
+---
 
-1. Extract text from PDF
-2. Clean text using regex
-3. Split text into chunks
-4. Store chunks in ChromaDB
-5. Retrieve relevant chunks based on user query
-6. Send context to Groq LLM
-7. Generate answer
+## 📂 Project Workflow
 
-## Example Questions
+```text
+PDF
+↓
+Extract Text
+↓
+Clean Text
+↓
+Chunk Text
+↓
+Store in ChromaDB
+↓
+Retrieve Relevant Chunks
+↓
+Create Context
+↓
+Groq LLM
+↓
+Answer
+```
+
+---
+
+## 💡 Example Questions
 
 * What is my name?
 * What internships have I completed?
-* What are my skills?
+* What are my technical skills?
+* What projects have I worked on?
 * Summarize my profile.
 
-## Future Improvements
+---
+
+## 📸 Sample Output
+
+Question:
+What internships have I completed?
+
+Answer:
+
+* Entrepreneurship Intern (Edutainer)
+* Blockchain & Web3 Intern (Future Intern Inc.)
+
+---
+
+## 🎯 What I Learned
+
+* PDF text extraction
+* Document chunking
+* Vector databases
+* Semantic retrieval
+* Retrieval-Augmented Generation (RAG)
+* Groq API integration
+
+---
+
+## 🔮 Future Improvements
 
 * Better chunking strategy
-* Streamlit UI
-* Multiple PDF support
+* Streamlit web interface
+* Multi-PDF support
 * Contract AI Extractor integration
+
+---
+
+## 👨‍💻 Author
+
+Mirwaise Khan
+
+Aspiring AI Product Engineer focused on Python, RAG systems, and AI-powered applications.
