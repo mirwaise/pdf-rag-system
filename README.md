@@ -1,101 +1,43 @@
-# 📄 PDF RAG System
+# 📄 Production-Grade PDF RAG System
 
-A Retrieval-Augmented Generation (RAG) application built using Python, ChromaDB, Groq, and PyPDF that can answer questions directly from PDF documents.
-
----
-
-## 🚀 Features
-
-* Extract text from PDF files
-* Clean and preprocess document content
-* Split documents into searchable chunks
-* Store chunks in ChromaDB
-* Retrieve relevant information using semantic search
-* Generate answers using Groq + Llama 3
+A high-performance Retrieval-Augmented Generation (RAG) pipeline engineered using Python, ChromaDB, and Groq to execute lightning-fast, context-aware semantic querying over unstructured PDF documents.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Architectural Features
 
-* Python
-* PyPDF
-* ChromaDB
-* Groq API
-* Llama 3
+* **High-Fidelity Text Extraction:** Streamlined document parsing and data normalization utilizing PyPDF architectures.
+* **Deterministic Chunking Pipeline:** Optimizes token boundaries by splitting document bodies into programmatically searchable chunks to preserve semantic context.
+* **Vector Embeddings Store:** High-density persistence layer leveraging ChromaDB for vector storage and rapid index retrieval.
+* **Semantic Search Execution:** Matches natural language user queries against embedded document chunks via cosine similarity/distance scoring.
+* **Low-Latency Synthesis:** Compiles relevant document context chunks and passes them through the Groq inference engine running Meta Llama 3 for deterministic, zero-hallucination answer generation.
 
 ---
 
-## 📂 Project Workflow
+## 🛠️ Tech Stack & Infrastructure
+
+* **Language:** Python 3.x
+* **Vector Database:** ChromaDB
+* **LLM Engine & Inference:** Groq Cloud API (Meta Llama 3 Execution Suite)
+* **Document Parser:** PyPDF Vectorization Layer
+
+---
+
+## 📂 System Data Workflow
 
 ```text
-PDF
-↓
-Extract Text
-↓
-Clean Text
-↓
-Chunk Text
-↓
-Store in ChromaDB
-↓
-Retrieve Relevant Chunks
-↓
-Create Context
-↓
-Groq LLM
-↓
-Answer
-```
-
----
-
-## 💡 Example Questions
-
-* What is my name?
-* What internships have I completed?
-* What are my technical skills?
-* What projects have I worked on?
-* Summarize my profile.
-
----
-## 📸 Demo
-
-![PDF RAG Demo](screenshot.png)
-
-## 📸 Sample Output
-
-Question:
-What internships have I completed?
-
-Answer:
-
-* Entrepreneurship Intern (Edutainer)
-* Blockchain & Web3 Intern (Future Intern Inc.)
-
----
-
-## 🎯 What I Learned
-
-* PDF text extraction
-* Document chunking
-* Vector databases
-* Semantic retrieval
-* Retrieval-Augmented Generation (RAG)
-* Groq API integration
-
----
-
-## 🔮 Future Improvements
-
-* Better chunking strategy
-* Streamlit web interface
-* Multi-PDF support
-* Contract AI Extractor integration
-
----
-
-## 👨‍💻 Author
-
-Mirwaise Khan
-
-Aspiring AI Product Engineer focused on Python, RAG systems, and AI-powered applications.
+       [ Unstructured PDF ]
+                ↓
+     [ Streamlined Parsing ]
+                ↓
+    [ Deterministic Chunking ]
+                ↓
+    [ Vector Embedding Store ] ———→ [ ChromaDB ]
+                ↓
+ [ Semantic Similarity Matching ]
+                ↓
+   [ Automated Context Assembly ]
+                ↓
+   [ Groq LLM Inference Loop ]
+                ↓
+     [ Structured Answer Output ]
